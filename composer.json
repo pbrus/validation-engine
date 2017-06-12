@@ -1,0 +1,23 @@
+{
+    "name": "pbrus/validation-engine",
+    "type": "project",
+    "homepage": "https://github.com/pbrus/validation-engine",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Przemysław Bruś",
+            "homepage": "https://github.com/pbrus/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0",
+        "twig/twig": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brus\\": "src/",
+            "Brus\\Exception\\": "src/exception/"
+        }
+    }
+}
