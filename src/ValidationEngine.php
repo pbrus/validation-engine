@@ -32,11 +32,11 @@ class ValidationEngine
 
     public function setFields($fieldsValuesPairs)
     {
-        $setFieldStatus = TRUE;
+        $setFieldStatus = true;
 
             foreach ($fieldsValuesPairs as $field => $value) {
                 if (!$this->setField($field, $value)) {
-                    $setFieldStatus = FALSE;
+                    $setFieldStatus = false;
                     break;
                 }
             }
@@ -46,15 +46,15 @@ class ValidationEngine
 
     public function setField($fieldName, $valueOfField)
     {
-        $validFieldNameStatus = TRUE;
-        $validSetFieldStatus = FALSE;
+        $validFieldNameStatus = true;
+        $validSetFieldStatus = false;
 
             foreach ($this->fields as $fields) {
                 if ($fields == $fieldName) {
                     if ($this->validate($fieldName, $valueOfField)) {
-                        $validSetFieldStatus = TRUE;
+                        $validSetFieldStatus = true;
                     }
-                    $validFieldNameStatus = FALSE;
+                    $validFieldNameStatus = false;
                     break;
                 }
             }
@@ -68,7 +68,7 @@ class ValidationEngine
 
     private function validate($fieldName, $valueOfField)
     {
-        $validFieldStatus = TRUE;
+        $validFieldStatus = true;
 
         foreach ($this->constraintsForFields as $field => $constraints) {
             if ($fieldName == $field) {
@@ -76,7 +76,7 @@ class ValidationEngine
                     $validFieldStatus = $constraint->isValidated($valueOfField);
                     if (!$validFieldStatus) {
                         $this->errorMessage = $constraint->getMessage();
-                        $validFieldStatus = FALSE;
+                        $validFieldStatus = false;
                         break 2;
                     }
                 }
