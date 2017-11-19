@@ -4,7 +4,16 @@ This is a simple validation engine written in PHP OOP for fun. If you need a rob
 
 ## Installation
 
-In prep.
+Install the package using *Composer*:
+```bash
+$ composer require pbrus/validation-engine=dev-master
+```
+Then go to the `validation-engine/` directory and make `dump-autoload`:
+```bash
+$ cd vendor/pbrus/validation-engine/
+$ composer dump-autoload
+```
+If don't know what *Composer* is, see the [simplified PHP installation](https://github.com/pbrus/astro-quiz#installation).
 
 ## Usage
 
