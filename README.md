@@ -1,4 +1,6 @@
-# Validation-engine [![GitHub release](http://www.astro.uni.wroc.pl/ludzie/brus/img/github/ver20170613.svg "download")](https://github.com/pbrus/validation-engine/) ![Written in PHP](http://www.astro.uni.wroc.pl/ludzie/brus/img/github/php.svg "language")
+# Validation-engine
+[![Written in PHP](https://img.shields.io/badge/code-PHP-blue.svg "language")](https://www.php.net/)
+[![License](https://img.shields.io/badge/license-MIT-yellow.svg "MIT license")](https://github.com/pbrus/validation-engine/blob/master/LICENSE)
 
 This is a simple validation engine written in PHP OOP for fun. If you need a robust PHP validator I recommend [this one](https://github.com/Respect/Validation).
 
